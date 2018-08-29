@@ -1,0 +1,254 @@
+@font-face {
+    font-family: 'fancy_font';
+    src: url('NixieOne.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    background-color: #138BFF;
+}
+
+p {
+	margin: 5px;
+}
+
+#wrapper {
+    /*margin-left: 0 auto;
+    margin-right: 0 auto;
+    margin-top: 0 auto;
+    margin-bottom: 0 auto;
+    text-align: center;*/
+	width: 100%;
+	height: 50%;
+	overflow: auto;
+	margin: auto;
+	position: absolute;
+	top: 40%; left: 0; bottom: 0; right: 0;
+	text-align: center;
+}
+
+#generate_button_div, #textbox_div, #advanced_options_div  {
+	position: relative;
+}
+
+#advanced_options_div {
+	display: inline-block;
+	text-align: left;
+}
+
+#help_div {
+	/* Style */
+	background-color: #138BFF;
+	
+	/* Border */
+	border: 1px solid white;
+	border-radius: 10px;
+	
+	/* Position */
+	z-index: 999;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+	
+	/* Size */
+	width: 60%;
+}
+
+.button {
+    /* Font */
+    font-family: fancy_font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20pt;
+    
+    /* Border */
+    border: 1px solid white;
+    border-radius: 10px;
+    
+    /* Color */
+    color: white;
+    background-color: #138BFF/*rgba(0, 55, 108, 0.5)*/;
+    
+    /* Transitions */
+    -webkit-transtion: background-color 2s;
+    transition: background-color 2s;
+    
+    /* Margin */
+    margin: 5px;
+}
+
+#generate_button {
+    /* Size */
+    max-width: 1000px;
+    min-width: 400px;
+    width: 50%;
+    height: 50px;
+}
+
+#copy_button, #clear_button {
+    /* Size */
+    width: 100px;
+    height: 50px;
+}
+
+.button:hover {
+	/* Color */
+    background-color: rgba(0, 55, 108, 0.5);
+    
+	/* Cursor */
+    cursor: pointer;
+	
+	/* Transitions */
+	-webkit-transtion: background-color 2s;
+    transition: background-color 2s;
+}
+
+.textbox {
+    /* Font & Text */
+    font-family: fancy_font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20pt;
+    text-align: center;
+    
+    /* Size */
+    max-width: 800px;
+    min-width: 400px;
+    width: 50%;
+    height: 50px;
+    
+    /* Border */
+    border: 1px solid white;
+    border-radius: 10px;
+    
+    /* Color */
+    color: white;
+    background-color: #138BFF;
+    border-color: white;
+    
+    /* Margin */
+    margin-right: 5px;
+}
+
+.link {
+    /* Font */
+    font-family: fancy_font;
+    font-size: 15pt;
+    
+    /* Color */
+    color: white;
+	
+	/* Transitions */
+	-webkit-transtion: color 2s;
+    transition: color 2s;
+}
+
+.link:hover {
+    /* Font */
+    font-size: 15pt;
+    
+    /* Cursor */
+    cursor: pointer;
+	color: rgba(0, 22, 43, 1);
+	
+	/* Transitions */
+	-webkit-transtion: color 2s;
+    transition: color 2s;
+}
+
+.options {
+    /* Font */
+    font-family: fancy_font;
+    font-size: 15pt;
+    
+    /* Color */
+    color: white;
+    
+	margin: 5px;
+}
+
+label {
+	/* Color */
+    color: white;
+	
+	/* Transitions */
+	-webkit-transtion: color 2s;
+    transition: color 2s;
+}
+
+label:hover {
+	/* Cursor */
+    cursor: pointer;
+	color: rgba(0, 22, 43, 1);
+	
+	/* Transitions */
+	-webkit-transtion: color 2s;
+    transition: color 2s;
+}
+
+.title {
+	/* Font */
+    font-family: fancy_font;
+    font-size: 20pt;
+    
+    /* Color */
+    color: white;
+    
+	text-align: center;
+	margin: 5px;
+}
+
+#close_help {
+	/* Color */
+    color: white;
+	
+	/* Transitions */
+	-webkit-transtion: color 2s;
+    transition: color 2s;
+}
+
+#close_help:hover {
+	/* Cursor */
+    cursor: pointer;
+	color: rgba(0, 22, 43, 1);
+	
+	/* Transitions */
+	-webkit-transtion: color 2s;
+    transition: color 2s;
+}
+
+.help_content {
+	/* Font */
+    font-family: fancy_font;
+    font-size: 15pt;
+    
+    /* Color */
+    color: white;
+    
+	text-align: left;
+	margin: 5px;
+}
+
+#custom_length_tb, #custom_prefix_tb {
+	/* Font & Text */
+    font-family: fancy_font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12pt;
+    text-align: center;
+	
+    /* Border */
+    border: 1px solid white;
+    border-radius: 10px;
+    
+    /* Color */
+    color: white;
+    background-color: #138BFF;
+    border-color: white;
+    
+    /* Margin */
+    margin: 5px;
+}

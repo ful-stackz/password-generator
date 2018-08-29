@@ -1,0 +1,49 @@
+<html>
+<head>
+	<meta name="author" content="Ivan Stoyanov">
+	<meta name="description" content="A random strong password generator">
+	<title>Password Generator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="wrapper">
+		<div id="generate_button_div">
+			<input type="button" class="button" id="generate_button" title="Generate code" value="Generate">
+		</div>
+		<div id="textbox_div">
+			<input type="text" class="textbox" id="output_textbox">
+			<input type="button" class="button" id="copy_button" title="Copy code" value="Copy">
+			<input type="button" class="button" id="clear_button" title="Clear code" value="Clear">
+		</div>
+		<div id="advanced_options_div">
+			<p class="link" id="advanced_options_button" onclick="show()">Advanced Options</p>
+			<p class="options" id="advanced_options_panel">
+				<label><input type="checkbox" id="letters_only_cb" /><span id="letters_only_tl"> Letters only</span></label><br>
+				<label><input type="checkbox" id="numerals_only_cb" /> Numerals only</label><br>
+				<label><input type="checkbox" id="no_consecutives_cb" /> No consecutives</label><br>
+				<label><input type="checkbox" id="use_specials_cb" /> Use specials</label><br>
+				<label><input type="checkbox" id="custom_length_cb" /><span id="custom_length_tl">&thinsp;Custom length</span><input type="text" id="custom_length_tb" /></label><br>
+				<label><input type="checkbox" id="custom_prefix_cb" /><span id="custom_prefix_tl">&thinsp;Custom prefix</span><input type="text" id="custom_prefix_tb" /></label><br>
+				<span id="help_button" class="link">Help</span>
+			</p>
+		</div>
+	</div>
+	<div id="help_div">
+		<p class="title">Help</p>
+		<p class="help_content">
+			1. By default the <i>Generate</i> button will produce a 10 symbols long, mixed string (includes uppercase, lowercase and numerals). <br>
+			2. The <i>Clear</i> button will erase the already produced string and will return you to the <i>Generate</i> button. <br>
+			3. By marking the <i>Letters Only</i> checkbox, the script will produce a letters only string (includes uppercase and lowercase). <br>
+			4. By marking the <i>Numerals Only</i> checkbox, the script will produce a numerals only string (0 - 9). <br>
+			5. By marking the <i>No Consecutives</i> checkbox, the script will produce a string where no two consecutive characters are the same. <br>
+			6. By marking the <i>Use Specials</i> checkbox, the script will produce a string which contains special symbols (includes #, $, &, *, +, -, @ and _). <br>
+			7. The length of the produced string can be manually adjusted by marking the <i>Custom Length</i> checkbox and entering the desired length in the newly appeared textbox. <br>
+			8. The string may also be preceded by a custom prefix combination. This can be done by marking the <i>Custom Prefix</i> checkbox and entering the custom prefix in the newly appeared 
+			textbox. Note that the prefix is included in the desired length.
+		</p>
+		<p class="title" id="close_help">Close</p>
+	</div>
+	
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
